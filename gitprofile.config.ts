@@ -4,15 +4,11 @@ const CONFIG = {
   github: {
     username: 'cuuthegioi',
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
+  // /portfolio/ or /
   base: '/portfolio/',
   projects: {
     github: {
-      display: false, // Display GitHub projects?
+      display: false,
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
@@ -151,7 +147,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      '/portfolio/sonngo-resume.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '/portfolio/sonngo-resume.pdf',
   },
   skills: [
     'JavaScript',
@@ -189,7 +185,7 @@ const CONFIG = {
       company: 'Hexabase Inc',
       position: 'Frontend Developer',
       from: '2023',
-      to: '2005',
+      to: '2025',
       companyLink: 'https://hexabase.com',
     },
     {

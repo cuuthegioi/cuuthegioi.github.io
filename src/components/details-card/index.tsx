@@ -180,7 +180,8 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                 <ListItem
                   icon={<MdLocationOn />}
                   title="Based in:"
-                  value={profile.location}
+                  // value={profile.location}
+                  value="Hanoi, Vietnam"
                 />
               )}
               {profile.company && (

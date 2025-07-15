@@ -70,12 +70,12 @@ const ExternalProjectCard = ({
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
       <a
-        className="card shadow-md card-sm bg-base-100 cursor-pointer"
+        className={`card shadow-md card-sm bg-base-100 cursor-pointer ${!item.link ? 'pointer-events-none' : ''}`}
         key={index}
         href={item.link}
         onClick={(e) => {
           e.preventDefault();
-
+          if (!item.link) return;
           try {
             if (googleAnalyticId) {
               ga.event('Click External Project', {
@@ -99,7 +99,7 @@ const ExternalProjectCard = ({
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle">
+                      <div className="w-100 h-100 mask mask-square">
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
@@ -115,6 +115,13 @@ const ExternalProjectCard = ({
                   <p className="mt-2 text-base-content text-sm text-justify">
                     {item.description}
                   </p>
+                </div>
+                <div className="mt-2 flex items-center flex-wrap justify-center">
+                  {item.tech?.map((tech, index) => (
+                    <div key={index} className="badge badge-primary badge-sm mr-2 mt-2">
+                      {tech}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

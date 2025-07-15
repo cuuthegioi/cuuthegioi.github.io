@@ -50,6 +50,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
                 <LazyImage
                   src={profile.avatar ? profile.avatar : FALLBACK_IMAGE}
                   alt={profile.name}
+                  className="[object-position:center_-15%] scale-120"
                   placeholder={skeleton({
                     widthCls: 'w-full',
                     heightCls: 'h-full',
@@ -71,9 +72,10 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             )}
           </h5>
           <div className="mt-3 text-base-content font-mono">
-            {loading || !profile
+            {/* {loading || !profile
               ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
-              : profile.bio}
+              : profile.bio} */}
+              Senior Fullstack Developer | 8+ years | Cloud-native | Team Leader
           </div>
         </div>
         {resumeFileUrl &&

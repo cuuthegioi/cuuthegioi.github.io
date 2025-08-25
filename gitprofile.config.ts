@@ -27,8 +27,17 @@ const CONFIG = {
     external: {
       header: 'My Projects',
       projects: [
+        // {
+        //   title: 'Pay',
+        //   description:
+        //     'Talk to Gemini through Telegram, your AI assistant, always on, always context-aware',
+        //   imageUrl:
+        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+        //   // link: 'https://example.com',
+        //   tech: ['ExpressJS', 'TelegramBotAPI', 'GoogleGenerativeAPI'],
+        // },
         {
-          title: 'Telegram Gemini Bridge ',
+          title: 'Telegram Gemini Bridge',
           description:
             'Talk to Gemini through Telegram, your AI assistant, always on, always context-aware',
           imageUrl:
@@ -68,7 +77,7 @@ const CONFIG = {
           description:
             'This project is a microservice-based travel portal designed for both travelers and travel agents. It allows users to book flights, hotel rooms, and airport transfers seamlessly. The system provides a scalable and modular architecture, enabling travel agents to efficiently manage bookings and offer personalized services',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            '/portfolio/voyager.png',
           link: 'https://hotelista.jp/',
           tech: ['VueJS', 'NestJS', 'Docker', 'Google Cloud Service', 'PostgreSQL'],
         },
@@ -130,9 +139,18 @@ const CONFIG = {
           description:
             'This project is a survey and information collection platform designed for schools, hospitals, and nursing homes to track and manage patient and student records. The system allows nurses and caregivers to efficiently gather, update, and access CV-style information, supporting personalized care, treatment, and education planning',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://kiroku.ai/login',
+            'https://pitout.co.jp/kirokuai/static/image/group-37@2x.png',
+          link: 'https://pitout.co.jp/kirokuai/',
           tech: ['AWS', 'KoaJS', 'ReactJS', 'LINE CLI'],
+        },
+        {
+          title: 'TrueBanker',
+          description:
+            'This portal between companies and organizations provides financial services (taxes, insurance, credit, and banking) to individuals in need of services. In charge of customer discussion, analysis.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          // link: 'https://pitout.co.jp/kirokuai/',
+          tech: ['Node.JS', 'AngularJS 2', 'MongoDB', 'Google Compute Engine', 'Jenkins'],
         },
       ],
     },

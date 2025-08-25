@@ -27,22 +27,13 @@ const CONFIG = {
     external: {
       header: 'My Projects',
       projects: [
-        // {
-        //   title: 'Pay',
-        //   description:
-        //     'Talk to Gemini through Telegram, your AI assistant, always on, always context-aware',
-        //   imageUrl:
-        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-        //   // link: 'https://example.com',
-        //   tech: ['ExpressJS', 'TelegramBotAPI', 'GoogleGenerativeAPI'],
-        // },
         {
           title: 'Telegram Gemini Bridge',
           description:
             'Talk to Gemini through Telegram, your AI assistant, always on, always context-aware',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          // link: 'https://example.com',
+          githubUrl: 'https://github.com/cuuthegioi/telegram-gemini-bridge',
           tech: ['ExpressJS', 'TelegramBotAPI', 'GoogleGenerativeAPI'],
         },
         {
@@ -69,7 +60,6 @@ const CONFIG = {
             'This project focuses on flood forecasting for Tokyo over the next 10, 25, and 50 years. It analyzes rising sea levels and predicts potential flood scenarios. Additionally, it assesses the damage risk to key assets such as buildings, public offices, and administrative areas based on sea level rise data. The goal is to provide accurate insights for urban planning and disaster prevention',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          // link: 'https://example.com',
           tech: ['ReactJS', 'NestJS', 'Docker', 'MySQL'],
         },
         {
@@ -81,14 +71,6 @@ const CONFIG = {
           link: 'https://hotelista.jp/',
           tech: ['VueJS', 'NestJS', 'Docker', 'Google Cloud Service', 'PostgreSQL'],
         },
-        // {
-        //   title: 'NextWebUI',
-        //   description:
-        //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-        //   imageUrl:
-        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-        //   link: 'https://example.com',
-        // },
         {
           title: 'Study Abroad Consulting System',
           description:
@@ -104,7 +86,6 @@ const CONFIG = {
             'This project is a comprehensive financial planning system designed to help users manage their finances and make informed decisions. By analyzing customer income, insurance policies, loan profiles, and real estate assets, the system provides personalized financial assessments and develops long-term financial plans. It offers tailored recommendations for spending, shopping, saving, and retirement',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          // link: 'https://example.com',
           tech: ['ExpressJS', 'ReactJS', 'Redux', 'AWS', 'MySQL', 'Ruby'],
         },
         {
@@ -113,7 +94,6 @@ const CONFIG = {
             'This app provides booking services for cars, passenger, along with other great utilities',
           imageUrl:
             '/portfolio/meemo2.PNG',
-          // link: 'https://example.com',
           tech: ['ReactNative', 'GoogleMapAPI', 'GraphQL'],
         },
         {
@@ -149,7 +129,6 @@ const CONFIG = {
             'This portal between companies and organizations provides financial services (taxes, insurance, credit, and banking) to individuals in need of services. In charge of customer discussion, analysis.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          // link: 'https://pitout.co.jp/kirokuai/',
           tech: ['Node.JS', 'AngularJS 2', 'MongoDB', 'Google Compute Engine', 'Jenkins'],
         },
       ],

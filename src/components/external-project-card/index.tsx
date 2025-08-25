@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import LazyImage from '../lazy-image';
-import { MdOpenInNew } from 'react-icons/md';
+import { MdLanguage, MdOpenInNew } from 'react-icons/md';
+import { FaGithub } from 'react-icons/fa';
 import { ga, skeleton } from '../../utils';
 import { SanitizedExternalProject } from '../../interfaces/sanitized-config';
 
@@ -20,46 +21,56 @@ const ExternalProjectCard = ({
     for (let index = 0; index < externalProjects.length; index++) {
       array.push(
         <div className="card shadow-md card-sm bg-base-100" key={index}>
-          <div className="p-8 h-full w-full">
-            <div className="flex items-center flex-col">
+                  <div className="p-8 h-full w-full flex flex-col">
+          <div className="flex-1">
+            <div className="flex items-start px-4">
               <div className="w-full">
-                <div className="flex items-start px-4">
-                  <div className="w-full">
-                    <h2>
-                      {skeleton({
-                        widthCls: 'w-32',
-                        heightCls: 'h-8',
-                        className: 'mb-2 mx-auto',
-                      })}
-                    </h2>
-                    <div className="avatar w-full h-full">
-                      <div className="w-24 h-24 mask mask-squircle mx-auto">
-                        {skeleton({
-                          widthCls: 'w-full',
-                          heightCls: 'h-full',
-                          shape: '',
-                        })}
-                      </div>
-                    </div>
-                    <div className="mt-2">
-                      {skeleton({
-                        widthCls: 'w-full',
-                        heightCls: 'h-4',
-                        className: 'mx-auto',
-                      })}
-                    </div>
-                    <div className="mt-2 flex items-center flex-wrap justify-center">
-                      {skeleton({
-                        widthCls: 'w-full',
-                        heightCls: 'h-4',
-                        className: 'mx-auto',
-                      })}
-                    </div>
+                <h2>
+                  {skeleton({
+                    widthCls: 'w-32',
+                    heightCls: 'h-8',
+                    className: 'mb-2 mx-auto',
+                  })}
+                </h2>
+                <div className="avatar w-full h-full">
+                  <div className="w-24 h-24 mask mask-squircle mx-auto">
+                    {skeleton({
+                      widthCls: 'w-full',
+                      heightCls: 'h-full',
+                      shape: '',
+                    })}
                   </div>
+                </div>
+                <div className="mt-2">
+                  {skeleton({
+                    widthCls: 'w-full',
+                    heightCls: 'h-4',
+                    className: 'mx-auto',
+                  })}
+                </div>
+                <div className="mt-2 flex items-center flex-wrap justify-center">
+                  {skeleton({
+                    widthCls: 'w-full',
+                    heightCls: 'h-4',
+                    className: 'mx-auto',
+                  })}
                 </div>
               </div>
             </div>
           </div>
+          <div className="mt-4 flex items-center justify-center space-x-2">
+            {skeleton({
+              widthCls: 'w-8',
+              heightCls: 'h-8',
+              shape: 'rounded-full',
+            })}
+            {skeleton({
+              widthCls: 'w-8',
+              heightCls: 'h-8',
+              shape: 'rounded-full',
+            })}
+          </div>
+        </div>
         </div>,
       );
     }
@@ -69,65 +80,89 @@ const ExternalProjectCard = ({
 
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
-      <a
-        className={`card shadow-md card-sm bg-base-100 cursor-pointer ${!item.link ? 'pointer-events-none' : ''}`}
+      <div
+        className="card shadow-md card-sm bg-base-100"
         key={index}
-        href={item.link}
-        onClick={(e) => {
-          e.preventDefault();
-          if (!item.link) return;
-          try {
-            if (googleAnalyticId) {
-              ga.event('Click External Project', {
-                post: item.title,
-              });
-            }
-          } catch (error) {
-            console.error(error);
-          }
-
-          window?.open(item.link, '_blank');
-        }}
       >
-        <div className="p-8 h-full w-full">
-          <div className="flex items-center flex-col">
-            <div className="w-full">
-              <div className="px-4">
-                <div className="text-center w-full">
-                  <h2 className="font-medium text-center opacity-60 mb-2">
-                    {item.title}
-                  </h2>
-                  {item.imageUrl && (
-                    <div className="avatar opacity-90">
-                      <div className="w-100 h-100 mask mask-square">
-                        <LazyImage
-                          src={item.imageUrl}
-                          alt={'thumbnail'}
-                          placeholder={skeleton({
-                            widthCls: 'w-full',
-                            heightCls: 'h-full',
-                            shape: '',
-                          })}
-                        />
-                      </div>
+        <div className="p-8 h-full w-full flex flex-col">
+          <div className="flex-1">
+            <div className="px-4">
+              <div className="text-center w-full">
+                <h2 className="font-medium text-center opacity-60 mb-2">
+                  {item.title}
+                </h2>
+                {item.imageUrl && (
+                  <div className="avatar opacity-90">
+                    <div className="w-100 h-100 mask mask-square">
+                      <LazyImage
+                        src={item.imageUrl}
+                        alt={'thumbnail'}
+                        placeholder={skeleton({
+                          widthCls: 'w-full',
+                          heightCls: 'h-full',
+                          shape: '',
+                        })}
+                      />
                     </div>
-                  )}
-                  <p className="mt-2 text-base-content text-sm text-justify">
-                    {item.description}
-                  </p>
-                </div>
-                <div className="mt-2 flex items-center flex-wrap justify-center">
-                  {item.tech?.map((tech, index) => (
-                    <div key={index} className="badge badge-primary badge-sm mr-2 mt-2">
-                      {tech}
-                    </div>
-                  ))}
-                </div>
+                  </div>
+                )}
+                <p className="mt-2 text-base-content text-sm text-justify">
+                  {item.description}
+                </p>
+              </div>
+              <div className="mt-2 flex items-center flex-wrap justify-center">
+                {item.tech?.map((tech, index) => (
+                  <div key={index} className="badge badge-primary badge-sm mr-2 mt-2">
+                    {tech}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
+          <div className="mt-4 flex items-center justify-center space-x-2">
+            {item.link && (
+              <button
+                className="btn btn-circle btn-sm btn-primary"
+                onClick={() => {
+                  try {
+                    if (googleAnalyticId) {
+                      ga.event('Click External Project Link', {
+                        post: item.title,
+                      });
+                    }
+                  } catch (error) {
+                    console.error(error);
+                  }
+                  window?.open(item.link, '_blank');
+                }}
+                title="Visit Project"
+              >
+                <MdLanguage className="text-lg" />
+              </button>
+            )}
+            {item.githubUrl && (
+              <button
+                className="btn btn-circle btn-sm btn-secondary"
+                onClick={() => {
+                  try {
+                    if (googleAnalyticId) {
+                      ga.event('Click External Project GitHub', {
+                        post: item.title,
+                      });
+                    }
+                  } catch (error) {
+                    console.error(error);
+                  }
+                  window?.open(item.githubUrl, '_blank');
+                }}
+                title="View on GitHub"
+              >
+                <FaGithub className="text-lg" />
+              </button>
+            )}
+          </div>
         </div>
-      </a>
+      </div>
     ));
   };
 

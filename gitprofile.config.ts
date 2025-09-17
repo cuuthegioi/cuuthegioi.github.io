@@ -179,6 +179,11 @@ const CONFIG = {
   ],
   experiences: [
     {
+      position: 'Software Contractor',
+      from: '2025',
+      to: 'Present',
+    },
+    {
       company: 'Hexabase Inc',
       position: 'Frontend Developer',
       from: '2023',

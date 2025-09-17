@@ -5,7 +5,7 @@ const CONFIG = {
     username: 'cuuthegioi',
   },
   // /portfolio/ or /
-  base: '/portfolio/',
+  base: '/',
   projects: {
     github: {
       display: false,
@@ -41,7 +41,7 @@ const CONFIG = {
           description:
             'This project develops a platform for automating Instagram comment replies. Users can create rules and templates to automatically respond to comments, while the platform manages subscriptions and payments for access to these features',
           imageUrl:
-            '/portfolio/studio-one.png',
+            '/studio-one.png',
           link: 'https://studio-one-ig-marketing.com/',
           tech: ['NextJS', 'ExpressJS', 'MySQL', 'AWS SQS', 'AWS Lambda', 'StripeAPI', 'MetaBusinessAPI', 'InstagramAPIs'],
         },
@@ -50,7 +50,7 @@ const CONFIG = {
           description:
             'Designed and developed a corporate website for Toyo Kuni, a company specializing in manufacturing and industrial solutions. The site provides detailed product information, company insights, and service offerings, ensuring a user-friendly experience with a clean and professional design. Optimized for performance, accessibility, and SEO to enhance online presence and customer engagement',
           imageUrl:
-            '/portfolio/toyokuni.png',
+            '/toyokuni.png',
           link: 'https://www.toyo-kuni.co.jp/',
           tech: ['ReactJS', 'NextJS', 'TypeScript'],
         },
@@ -67,7 +67,7 @@ const CONFIG = {
           description:
             'This project is a microservice-based travel portal designed for both travelers and travel agents. It allows users to book flights, hotel rooms, and airport transfers seamlessly. The system provides a scalable and modular architecture, enabling travel agents to efficiently manage bookings and offer personalized services',
           imageUrl:
-            '/portfolio/voyager.png',
+            '/voyager.png',
           link: 'https://hotelista.jp/',
           tech: ['VueJS', 'NestJS', 'Docker', 'Google Cloud Service', 'PostgreSQL'],
         },
@@ -76,7 +76,7 @@ const CONFIG = {
           description:
             'This project is a study abroad consulting system that helps students connect with education advisors. It allows users to schedule consultation appointments, manage scholarship consultation registrations, and provides tools for sales workshift scheduling. The system also includes a timesheet management module to efficiently track advisor availability and optimize scheduling',
           imageUrl:
-            '/portfolio/CPA-1.png',
+            '/CPA-1.png',
           link: 'https://reserve.cpa-net.jp/',
           tech: ['Google App Script', 'Google Cloud Service', 'JQuery', 'ExpressJS', 'GoogleChatAPI', 'GoogleCalendar', 'ZoomAPI', 'Sendgrid'],
         },
@@ -93,7 +93,7 @@ const CONFIG = {
           description:
             'This app provides booking services for cars, passenger, along with other great utilities',
           imageUrl:
-            '/portfolio/meemo2.PNG',
+            '/meemo2.PNG',
           tech: ['ReactNative', 'GoogleMapAPI', 'GraphQL'],
         },
         {
@@ -101,7 +101,7 @@ const CONFIG = {
           description:
             'This project is an official swimming competition records portal recognized by the Japan Swimming Federation. It serves as a centralized platform for tracking swimming tournaments, athlete profiles, personal achievements, and official records. Users can search for competition results, follow live event updates, and access ranking statistics',
           imageUrl:
-            '/portfolio/swimrecord.png',
+            '/swimrecord.png',
           link: 'https://result.swim.or.jp/',
           tech: ['ReactJS', 'Redux', 'ReChart', 'Firebase'],
         },
@@ -110,7 +110,7 @@ const CONFIG = {
           description:
             'This project aims to renovate a series of portfolio websites, namely PhotoAC, IllustAC, SilhouetteAC, for users to upload, download, and purchase photos.',
           imageUrl:
-            '/portfolio/ac1.png',
+            '/ac1.png',
           link: 'https://en.photo-ac.com/',
           tech: ['NodeJS', 'AWS', 'Serverless', 'ReactJS', 'Redux', 'Redux-saga', 'NextJS', 'Elastic Search'],
         },
@@ -144,7 +144,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      '/portfolio/sonngo-resume.pdf',
+      '/sonngo-resume.pdf',
   },
   skills: [
     'JavaScript',

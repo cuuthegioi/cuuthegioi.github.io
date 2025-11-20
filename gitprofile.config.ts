@@ -39,7 +39,7 @@ const CONFIG = {
         {
           title: 'Instagram Marketing Platform',
           description:
-            'This project develops a platform for automating Instagram comment replies. Users can create rules and templates to automatically respond to comments, while the platform manages subscriptions and payments for access to these features',
+            'Marketing platform for automating Instagram comment replies. Users can create rules and templates to automatically respond to comments, while the platform manages subscriptions and payments for access to these features',
           imageUrl:
             '/studio-one.png',
           link: 'https://studio-one-ig-marketing.com/',
@@ -65,7 +65,7 @@ const CONFIG = {
         {
           title: 'Travel Portal',
           description:
-            'This project is a microservice-based travel portal designed for both travelers and travel agents. It allows users to book flights, hotel rooms, and airport transfers seamlessly. The system provides a scalable and modular architecture, enabling travel agents to efficiently manage bookings and offer personalized services',
+            'Microservice-based travel portal designed for both travelers and travel agents. It allows users to book flights, hotel rooms, and airport transfers seamlessly. The system provides a scalable and modular architecture, enabling travel agents to efficiently manage bookings and offer personalized services',
           imageUrl:
             '/voyager.png',
           link: 'https://hotelista.jp/',
